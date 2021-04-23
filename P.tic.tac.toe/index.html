@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel = "stylesheet"type = "text/css"href = "style.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Special+Elite&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <h1 class='title'>Tic Tac Toe</h1>
+        <button class='btn-choose'>PUSH to START</button>
+    </header>
+    <main>
+    <section class="left">
+            <h1 class='player1'>PLAYER 1</h1>
+                <p class='P1-x hidden'>X</p>
+                <p class='P1-o hidden'>O</p>
+        <div class="choice-modal hidden">
+            <p>Do you want to play
+                <span class='mod font'> with X's
+                <button class='btn-X hidden'>X</button></span></p>
+          <p class='mod font'>or O's
+              <button class='btn-O hidden'>O</button>
+            </p>
+           
+        </div>
+    </section>
+    <section class='center'>
+        <div class='game-container'>
+            <div data-cell-index='0' class='cell'></div>
+            <div data-cell-index='1' class='cell'></div>
+            <div data-cell-index='2' class='cell'></div>
+            <div data-cell-index='3' class='cell'></div>
+            <div data-cell-index='4' class='cell'></div>
+            <div data-cell-index='5' class='cell'></div>
+            <div data-cell-index='6' class='cell'></div>
+            <div data-cell-index='7' class='cell'></div>
+            <div data-cell-index='8' class='cell'></div>
+        </div>
+        <button class='restart hidden'>Play AGAIN!</button>
+    </section>
+    <section class='right'>
+        <h1 class='player2'>PLAYER 2</h1>
+        <p class='P2-x hidden'>X</p>
+        <p class='P2-o hidden'>O</p>
+    </section>
+</main>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html>
